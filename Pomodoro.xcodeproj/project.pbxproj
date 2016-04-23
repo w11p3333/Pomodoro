@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B264CE161CBE40BA0063012A /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264CE151CBE40BA0063012A /* StatisticsViewController.swift */; };
+		B275E0EE1CAF5553006BB7E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275E0ED1CAF5553006BB7E8 /* AppDelegate.swift */; };
+		B275E0F01CAF5553006BB7E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275E0EF1CAF5553006BB7E8 /* ViewController.swift */; };
+		B275E0F31CAF5553006BB7E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B275E0F11CAF5553006BB7E8 /* Main.storyboard */; };
+		B275E0F51CAF5553006BB7E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B275E0F41CAF5553006BB7E8 /* Assets.xcassets */; };
+		B275E0F81CAF5553006BB7E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B275E0F61CAF5553006BB7E8 /* LaunchScreen.storyboard */; };
+		B275E1031CAF5553006BB7E8 /* PomodoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275E1021CAF5553006BB7E8 /* PomodoroTests.swift */; };
+		B275E10E1CAF5553006BB7E8 /* PomodoroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275E10D1CAF5553006BB7E8 /* PomodoroUITests.swift */; };
+		B275E1201CAFE22D006BB7E8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275E11F1CAFE22D006BB7E8 /* SettingViewController.swift */; };
+		B275E13D1CAFE9EC006BB7E8 /* Federico Durand - El pequeño huésped sigue dormido.png in Resources */ = {isa = PBXBuildFile; fileRef = B275E1241CAFE9EB006BB7E8 /* Federico Durand - El pequeño huésped sigue dormido.png */; };
+		B275E13E1CAFE9EC006BB7E8 /* flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B275E1251CAFE9EB006BB7E8 /* flower.jpg */; };
+		B275E13F1CAFE9EC006BB7E8 /* Hans Zimmer,Richard Harvey,Camille - Equation.png in Resources */ = {isa = PBXBuildFile; fileRef = B275E1261CAFE9EB006BB7E8 /* Hans Zimmer,Richard Harvey,Camille - Equation.png */; };
+		B275E1401CAFE9EC006BB7E8 /* 乡村野外Feel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B275E1271CAFE9EB006BB7E8 /* 乡村野外Feel.jpg */; };
+		B275E1411CAFE9EC006BB7E8 /* 小王子-重复的每一天.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B275E1281CAFE9EB006BB7E8 /* 小王子-重复的每一天.jpg */; };
+		B275E1421CAFE9EC006BB7E8 /* 河流＋鸟声.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B275E1291CAFE9EB006BB7E8 /* 河流＋鸟声.jpg */; };
+		B275E1431CAFE9EC006BB7E8 /* 雨水声＋忧美音乐.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B275E12A1CAFE9EB006BB7E8 /* 雨水声＋忧美音乐.jpg */; };
+		B275E1441CAFE9EC006BB7E8 /* 雨水声＋雷雨声.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B275E12B1CAFE9EB006BB7E8 /* 雨水声＋雷雨声.jpg */; };
+		B275E1451CAFE9EC006BB7E8 /* 音乐治疗－记忆强化.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B275E12C1CAFE9EC006BB7E8 /* 音乐治疗－记忆强化.JPG */; };
+		B275E1461CAFE9EC006BB7E8 /* 乡村野外Feel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B275E12D1CAFE9EC006BB7E8 /* 乡村野外Feel.mp3 */; };
+		B275E14B1CAFE9EC006BB7E8 /* 音乐治疗－记忆强化.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B275E1321CAFE9EC006BB7E8 /* 音乐治疗－记忆强化.mp3 */; };
+		B275E14C1CAFE9EC006BB7E8 /* 信号.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B275E1351CAFE9EC006BB7E8 /* 信号.jpg */; };
+		B275E14D1CAFE9EC006BB7E8 /* 叮.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B275E1361CAFE9EC006BB7E8 /* 叮.jpg */; };
+		B275E14E1CAFE9EC006BB7E8 /* 搞怪提醒音.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B275E1371CAFE9EC006BB7E8 /* 搞怪提醒音.jpg */; };
+		B275E14F1CAFE9EC006BB7E8 /* 正常提醒音.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B275E1381CAFE9EC006BB7E8 /* 正常提醒音.jpg */; };
+		B275E1511CAFE9EC006BB7E8 /* 叮.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B275E13A1CAFE9EC006BB7E8 /* 叮.mp3 */; };
+		B275E1871CAFF48A006BB7E8 /* RankListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275E1861CAFF48A006BB7E8 /* RankListTableViewController.swift */; };
+		B275E1891CAFFA06006BB7E8 /* RankListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275E1881CAFFA06006BB7E8 /* RankListTableViewCell.swift */; };
+		B275E2141CB276A6006BB7E8 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275E2131CB276A6006BB7E8 /* Schedule.swift */; };
+		B275E21B1CB29AED006BB7E8 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275E21A1CB29AED006BB7E8 /* UIColor+Extension.swift */; };
+		B2A849F21CBCED500051FD02 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A849F11CBCED500051FD02 /* TipsViewController.swift */; };
+		B2E41F0A1CC27C6D006C541F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E41F091CC27C6D006C541F /* Charts.framework */; };
+		B2E41F0B1CC27C6D006C541F /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2E41F091CC27C6D006C541F /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3F2CEB2073C71683F1059A5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550DB8D431011C4024C0B281 /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B275E0FF1CAF5553006BB7E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B275E0E21CAF5553006BB7E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B275E0E91CAF5553006BB7E8;
+			remoteInfo = Pomodoro;
+		};
+		B275E10A1CAF5553006BB7E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B275E0E21CAF5553006BB7E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B275E0E91CAF5553006BB7E8;
+			remoteInfo = Pomodoro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B22AC92D1CC277D00064CF74 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B2E41F0B1CC27C6D006C541F /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		15224CAFB7A4508CBE4B8C92 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		550DB8D431011C4024C0B281 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB24CBA0823CD2D6B878086 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B264CE151CBE40BA0063012A /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		B275E0EA1CAF5553006BB7E8 /* Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B275E0ED1CAF5553006BB7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B275E0EF1CAF5553006BB7E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B275E0F21CAF5553006BB7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B275E0F41CAF5553006BB7E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B275E0F71CAF5553006BB7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B275E0F91CAF5553006BB7E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B275E0FE1CAF5553006BB7E8 /* PomodoroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B275E1021CAF5553006BB7E8 /* PomodoroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTests.swift; sourceTree = "<group>"; };
+		B275E1041CAF5553006BB7E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B275E1091CAF5553006BB7E8 /* PomodoroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B275E10D1CAF5553006BB7E8 /* PomodoroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroUITests.swift; sourceTree = "<group>"; };
+		B275E10F1CAF5553006BB7E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B275E11F1CAFE22D006BB7E8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		B275E1241CAFE9EB006BB7E8 /* Federico Durand - El pequeño huésped sigue dormido.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Federico Durand - El pequeño huésped sigue dormido.png"; sourceTree = "<group>"; };
+		B275E1251CAFE9EB006BB7E8 /* flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower.jpg; sourceTree = "<group>"; };
+		B275E1261CAFE9EB006BB7E8 /* Hans Zimmer,Richard Harvey,Camille - Equation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hans Zimmer,Richard Harvey,Camille - Equation.png"; sourceTree = "<group>"; };
+		B275E1271CAFE9EB006BB7E8 /* 乡村野外Feel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "乡村野外Feel.jpg"; sourceTree = "<group>"; };
+		B275E1281CAFE9EB006BB7E8 /* 小王子-重复的每一天.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "小王子-重复的每一天.jpg"; sourceTree = "<group>"; };
+		B275E1291CAFE9EB006BB7E8 /* 河流＋鸟声.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "河流＋鸟声.jpg"; sourceTree = "<group>"; };
+		B275E12A1CAFE9EB006BB7E8 /* 雨水声＋忧美音乐.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "雨水声＋忧美音乐.jpg"; sourceTree = "<group>"; };
+		B275E12B1CAFE9EB006BB7E8 /* 雨水声＋雷雨声.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "雨水声＋雷雨声.jpg"; sourceTree = "<group>"; };
+		B275E12C1CAFE9EC006BB7E8 /* 音乐治疗－记忆强化.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "音乐治疗－记忆强化.JPG"; sourceTree = "<group>"; };
+		B275E12D1CAFE9EC006BB7E8 /* 乡村野外Feel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "乡村野外Feel.mp3"; sourceTree = "<group>"; };
+		B275E1321CAFE9EC006BB7E8 /* 音乐治疗－记忆强化.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "音乐治疗－记忆强化.mp3"; sourceTree = "<group>"; };
+		B275E1351CAFE9EC006BB7E8 /* 信号.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "信号.jpg"; sourceTree = "<group>"; };
+		B275E1361CAFE9EC006BB7E8 /* 叮.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "叮.jpg"; sourceTree = "<group>"; };
+		B275E1371CAFE9EC006BB7E8 /* 搞怪提醒音.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "搞怪提醒音.jpg"; sourceTree = "<group>"; };
+		B275E1381CAFE9EC006BB7E8 /* 正常提醒音.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "正常提醒音.jpg"; sourceTree = "<group>"; };
+		B275E13A1CAFE9EC006BB7E8 /* 叮.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "叮.mp3"; sourceTree = "<group>"; };
+		B275E1861CAFF48A006BB7E8 /* RankListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankListTableViewController.swift; sourceTree = "<group>"; };
+		B275E1881CAFFA06006BB7E8 /* RankListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankListTableViewCell.swift; sourceTree = "<group>"; };
+		B275E2131CB276A6006BB7E8 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		B275E21A1CB29AED006BB7E8 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		B2A849F11CBCED500051FD02 /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		B2E41F091CC27C6D006C541F /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Charts.framework; path = "/Users/luliangxiao/Library/Developer/Xcode/DerivedData/Pomodoro-cwzsugycysqplbcgexhijecdtodp/Build/Products/Debug-iphonesimulator/Charts.framework"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B275E0E71CAF5553006BB7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3F2CEB2073C71683F1059A5 /* Pods.framework in Frameworks */,
+				B2E41F0A1CC27C6D006C541F /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B275E0FB1CAF5553006BB7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B275E1061CAF5553006BB7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55881728345E31AFB1A6A44C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				550DB8D431011C4024C0B281 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B275E0E11CAF5553006BB7E8 = {
+			isa = PBXGroup;
+			children = (
+				B2E41F091CC27C6D006C541F /* Charts.framework */,
+				B275E0EC1CAF5553006BB7E8 /* Pomodoro */,
+				B275E1011CAF5553006BB7E8 /* PomodoroTests */,
+				B275E10C1CAF5553006BB7E8 /* PomodoroUITests */,
+				B275E0EB1CAF5553006BB7E8 /* Products */,
+				DFF4B92863F3D43AD95CAAF5 /* Pods */,
+				55881728345E31AFB1A6A44C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B275E0EB1CAF5553006BB7E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B275E0EA1CAF5553006BB7E8 /* Pomodoro.app */,
+				B275E0FE1CAF5553006BB7E8 /* PomodoroTests.xctest */,
+				B275E1091CAF5553006BB7E8 /* PomodoroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B275E0EC1CAF5553006BB7E8 /* Pomodoro */ = {
+			isa = PBXGroup;
+			children = (
+				B2A849EA1CBCD0700051FD02 /* Main */,
+				B2A849EB1CBCD08F0051FD02 /* RankList */,
+				B2A849EC1CBCD0AC0051FD02 /* Statistics */,
+				B275E2191CB29AD0006BB7E8 /* Resource */,
+				B2A849EF1CBCD1160051FD02 /* Setting */,
+				B2A849F01CBCECEF0051FD02 /* Tips */,
+				B275E0ED1CAF5553006BB7E8 /* AppDelegate.swift */,
+				B275E0F11CAF5553006BB7E8 /* Main.storyboard */,
+				B275E0F61CAF5553006BB7E8 /* LaunchScreen.storyboard */,
+				B275E0F41CAF5553006BB7E8 /* Assets.xcassets */,
+				B275E0F91CAF5553006BB7E8 /* Info.plist */,
+			);
+			path = Pomodoro;
+			sourceTree = "<group>";
+		};
+		B275E1011CAF5553006BB7E8 /* PomodoroTests */ = {
+			isa = PBXGroup;
+			children = (
+				B275E1021CAF5553006BB7E8 /* PomodoroTests.swift */,
+				B275E1041CAF5553006BB7E8 /* Info.plist */,
+			);
+			path = PomodoroTests;
+			sourceTree = "<group>";
+		};
+		B275E10C1CAF5553006BB7E8 /* PomodoroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B275E10D1CAF5553006BB7E8 /* PomodoroUITests.swift */,
+				B275E10F1CAF5553006BB7E8 /* Info.plist */,
+			);
+			path = PomodoroUITests;
+			sourceTree = "<group>";
+		};
+		B275E1211CAFE9DA006BB7E8 /* Bgm */ = {
+			isa = PBXGroup;
+			children = (
+				B275E1221CAFE9EB006BB7E8 /* LongMusic */,
+				B275E1331CAFE9EC006BB7E8 /* ShortMusic */,
+			);
+			path = Bgm;
+			sourceTree = "<group>";
+		};
+		B275E1221CAFE9EB006BB7E8 /* LongMusic */ = {
+			isa = PBXGroup;
+			children = (
+				B275E1231CAFE9EB006BB7E8 /* Images */,
+				B275E12D1CAFE9EC006BB7E8 /* 乡村野外Feel.mp3 */,
+				B275E1321CAFE9EC006BB7E8 /* 音乐治疗－记忆强化.mp3 */,
+			);
+			path = LongMusic;
+			sourceTree = "<group>";
+		};
+		B275E1231CAFE9EB006BB7E8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B275E1241CAFE9EB006BB7E8 /* Federico Durand - El pequeño huésped sigue dormido.png */,
+				B275E1251CAFE9EB006BB7E8 /* flower.jpg */,
+				B275E1261CAFE9EB006BB7E8 /* Hans Zimmer,Richard Harvey,Camille - Equation.png */,
+				B275E1271CAFE9EB006BB7E8 /* 乡村野外Feel.jpg */,
+				B275E1281CAFE9EB006BB7E8 /* 小王子-重复的每一天.jpg */,
+				B275E1291CAFE9EB006BB7E8 /* 河流＋鸟声.jpg */,
+				B275E12A1CAFE9EB006BB7E8 /* 雨水声＋忧美音乐.jpg */,
+				B275E12B1CAFE9EB006BB7E8 /* 雨水声＋雷雨声.jpg */,
+				B275E12C1CAFE9EC006BB7E8 /* 音乐治疗－记忆强化.JPG */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		B275E1331CAFE9EC006BB7E8 /* ShortMusic */ = {
+			isa = PBXGroup;
+			children = (
+				B275E1341CAFE9EC006BB7E8 /* Images */,
+				B275E13A1CAFE9EC006BB7E8 /* 叮.mp3 */,
+			);
+			path = ShortMusic;
+			sourceTree = "<group>";
+		};
+		B275E1341CAFE9EC006BB7E8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B275E1351CAFE9EC006BB7E8 /* 信号.jpg */,
+				B275E1361CAFE9EC006BB7E8 /* 叮.jpg */,
+				B275E1371CAFE9EC006BB7E8 /* 搞怪提醒音.jpg */,
+				B275E1381CAFE9EC006BB7E8 /* 正常提醒音.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		B275E2191CB29AD0006BB7E8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B275E2131CB276A6006BB7E8 /* Schedule.swift */,
+				B275E21A1CB29AED006BB7E8 /* UIColor+Extension.swift */,
+				B275E1211CAFE9DA006BB7E8 /* Bgm */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		B2A849EA1CBCD0700051FD02 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B275E0EF1CAF5553006BB7E8 /* ViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		B2A849EB1CBCD08F0051FD02 /* RankList */ = {
+			isa = PBXGroup;
+			children = (
+				B275E1861CAFF48A006BB7E8 /* RankListTableViewController.swift */,
+				B275E1881CAFFA06006BB7E8 /* RankListTableViewCell.swift */,
+			);
+			name = RankList;
+			sourceTree = "<group>";
+		};
+		B2A849EC1CBCD0AC0051FD02 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				B264CE151CBE40BA0063012A /* StatisticsViewController.swift */,
+			);
+			name = Statistics;
+			sourceTree = "<group>";
+		};
+		B2A849EF1CBCD1160051FD02 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B275E11F1CAFE22D006BB7E8 /* SettingViewController.swift */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		B2A849F01CBCECEF0051FD02 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				B2A849F11CBCED500051FD02 /* TipsViewController.swift */,
+			);
+			name = Tips;
+			sourceTree = "<group>";
+		};
+		DFF4B92863F3D43AD95CAAF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15224CAFB7A4508CBE4B8C92 /* Pods.debug.xcconfig */,
+				6DB24CBA0823CD2D6B878086 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B275E0E91CAF5553006BB7E8 /* Pomodoro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B275E1121CAF5553006BB7E8 /* Build configuration list for PBXNativeTarget "Pomodoro" */;
+			buildPhases = (
+				A0BE4DEE23DF3EF58D9F99BF /* Check Pods Manifest.lock */,
+				B275E0E61CAF5553006BB7E8 /* Sources */,
+				B275E0E71CAF5553006BB7E8 /* Frameworks */,
+				B275E0E81CAF5553006BB7E8 /* Resources */,
+				FC056D9000BA373DC1FF8796 /* Embed Pods Frameworks */,
+				E9ABB23D309380D0173B3C8F /* Copy Pods Resources */,
+				B22AC92D1CC277D00064CF74 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pomodoro;
+			productName = Pomodoro;
+			productReference = B275E0EA1CAF5553006BB7E8 /* Pomodoro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B275E0FD1CAF5553006BB7E8 /* PomodoroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B275E1151CAF5553006BB7E8 /* Build configuration list for PBXNativeTarget "PomodoroTests" */;
+			buildPhases = (
+				B275E0FA1CAF5553006BB7E8 /* Sources */,
+				B275E0FB1CAF5553006BB7E8 /* Frameworks */,
+				B275E0FC1CAF5553006BB7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B275E1001CAF5553006BB7E8 /* PBXTargetDependency */,
+			);
+			name = PomodoroTests;
+			productName = PomodoroTests;
+			productReference = B275E0FE1CAF5553006BB7E8 /* PomodoroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B275E1081CAF5553006BB7E8 /* PomodoroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B275E1181CAF5553006BB7E8 /* Build configuration list for PBXNativeTarget "PomodoroUITests" */;
+			buildPhases = (
+				B275E1051CAF5553006BB7E8 /* Sources */,
+				B275E1061CAF5553006BB7E8 /* Frameworks */,
+				B275E1071CAF5553006BB7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B275E10B1CAF5553006BB7E8 /* PBXTargetDependency */,
+			);
+			name = PomodoroUITests;
+			productName = PomodoroUITests;
+			productReference = B275E1091CAF5553006BB7E8 /* PomodoroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B275E0E21CAF5553006BB7E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "卢良潇";
+				TargetAttributes = {
+					B275E0E91CAF5553006BB7E8 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HQJ5Y44Q9H;
+					};
+					B275E0FD1CAF5553006BB7E8 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HQJ5Y44Q9H;
+						TestTargetID = B275E0E91CAF5553006BB7E8;
+					};
+					B275E1081CAF5553006BB7E8 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HQJ5Y44Q9H;
+						TestTargetID = B275E0E91CAF5553006BB7E8;
+					};
+				};
+			};
+			buildConfigurationList = B275E0E51CAF5553006BB7E8 /* Build configuration list for PBXProject "Pomodoro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B275E0E11CAF5553006BB7E8;
+			productRefGroup = B275E0EB1CAF5553006BB7E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B275E0E91CAF5553006BB7E8 /* Pomodoro */,
+				B275E0FD1CAF5553006BB7E8 /* PomodoroTests */,
+				B275E1081CAF5553006BB7E8 /* PomodoroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B275E0E81CAF5553006BB7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B275E0F81CAF5553006BB7E8 /* LaunchScreen.storyboard in Resources */,
+				B275E14B1CAFE9EC006BB7E8 /* 音乐治疗－记忆强化.mp3 in Resources */,
+				B275E0F51CAF5553006BB7E8 /* Assets.xcassets in Resources */,
+				B275E1411CAFE9EC006BB7E8 /* 小王子-重复的每一天.jpg in Resources */,
+				B275E14F1CAFE9EC006BB7E8 /* 正常提醒音.jpg in Resources */,
+				B275E14D1CAFE9EC006BB7E8 /* 叮.jpg in Resources */,
+				B275E1511CAFE9EC006BB7E8 /* 叮.mp3 in Resources */,
+				B275E1421CAFE9EC006BB7E8 /* 河流＋鸟声.jpg in Resources */,
+				B275E1451CAFE9EC006BB7E8 /* 音乐治疗－记忆强化.JPG in Resources */,
+				B275E14C1CAFE9EC006BB7E8 /* 信号.jpg in Resources */,
+				B275E13D1CAFE9EC006BB7E8 /* Federico Durand - El pequeño huésped sigue dormido.png in Resources */,
+				B275E1441CAFE9EC006BB7E8 /* 雨水声＋雷雨声.jpg in Resources */,
+				B275E13E1CAFE9EC006BB7E8 /* flower.jpg in Resources */,
+				B275E1431CAFE9EC006BB7E8 /* 雨水声＋忧美音乐.jpg in Resources */,
+				B275E13F1CAFE9EC006BB7E8 /* Hans Zimmer,Richard Harvey,Camille - Equation.png in Resources */,
+				B275E1401CAFE9EC006BB7E8 /* 乡村野外Feel.jpg in Resources */,
+				B275E14E1CAFE9EC006BB7E8 /* 搞怪提醒音.jpg in Resources */,
+				B275E1461CAFE9EC006BB7E8 /* 乡村野外Feel.mp3 in Resources */,
+				B275E0F31CAF5553006BB7E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B275E0FC1CAF5553006BB7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B275E1071CAF5553006BB7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0BE4DEE23DF3EF58D9F99BF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9ABB23D309380D0173B3C8F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC056D9000BA373DC1FF8796 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B275E0E61CAF5553006BB7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B275E2141CB276A6006BB7E8 /* Schedule.swift in Sources */,
+				B275E0F01CAF5553006BB7E8 /* ViewController.swift in Sources */,
+				B275E21B1CB29AED006BB7E8 /* UIColor+Extension.swift in Sources */,
+				B275E1871CAFF48A006BB7E8 /* RankListTableViewController.swift in Sources */,
+				B264CE161CBE40BA0063012A /* StatisticsViewController.swift in Sources */,
+				B275E0EE1CAF5553006BB7E8 /* AppDelegate.swift in Sources */,
+				B2A849F21CBCED500051FD02 /* TipsViewController.swift in Sources */,
+				B275E1201CAFE22D006BB7E8 /* SettingViewController.swift in Sources */,
+				B275E1891CAFFA06006BB7E8 /* RankListTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B275E0FA1CAF5553006BB7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B275E1031CAF5553006BB7E8 /* PomodoroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B275E1051CAF5553006BB7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B275E10E1CAF5553006BB7E8 /* PomodoroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B275E1001CAF5553006BB7E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B275E0E91CAF5553006BB7E8 /* Pomodoro */;
+			targetProxy = B275E0FF1CAF5553006BB7E8 /* PBXContainerItemProxy */;
+		};
+		B275E10B1CAF5553006BB7E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B275E0E91CAF5553006BB7E8 /* Pomodoro */;
+			targetProxy = B275E10A1CAF5553006BB7E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B275E0F11CAF5553006BB7E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B275E0F21CAF5553006BB7E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B275E0F61CAF5553006BB7E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B275E0F71CAF5553006BB7E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B275E1101CAF5553006BB7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B275E1111CAF5553006BB7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B275E1131CAF5553006BB7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15224CAFB7A4508CBE4B8C92 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Pomodoro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.Pomodoro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B275E1141CAF5553006BB7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DB24CBA0823CD2D6B878086 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Pomodoro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.Pomodoro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B275E1161CAF5553006BB7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PomodoroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.PomodoroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomodoro.app/Pomodoro";
+			};
+			name = Debug;
+		};
+		B275E1171CAF5553006BB7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PomodoroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.PomodoroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomodoro.app/Pomodoro";
+			};
+			name = Release;
+		};
+		B275E1191CAF5553006BB7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PomodoroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.PomodoroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Pomodoro;
+			};
+			name = Debug;
+		};
+		B275E11A1CAF5553006BB7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PomodoroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.PomodoroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Pomodoro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B275E0E51CAF5553006BB7E8 /* Build configuration list for PBXProject "Pomodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B275E1101CAF5553006BB7E8 /* Debug */,
+				B275E1111CAF5553006BB7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B275E1121CAF5553006BB7E8 /* Build configuration list for PBXNativeTarget "Pomodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B275E1131CAF5553006BB7E8 /* Debug */,
+				B275E1141CAF5553006BB7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B275E1151CAF5553006BB7E8 /* Build configuration list for PBXNativeTarget "PomodoroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B275E1161CAF5553006BB7E8 /* Debug */,
+				B275E1171CAF5553006BB7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B275E1181CAF5553006BB7E8 /* Build configuration list for PBXNativeTarget "PomodoroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B275E1191CAF5553006BB7E8 /* Debug */,
+				B275E11A1CAF5553006BB7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B275E0E21CAF5553006BB7E8 /* Project object */;
+}
