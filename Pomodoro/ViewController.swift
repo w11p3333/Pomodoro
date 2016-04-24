@@ -11,6 +11,7 @@ import AVFoundation
 import RealmSwift
 import MediaPlayer
 
+//时间状态
 struct timeState {
     
     static let WORKING:Int  = 0

@@ -180,9 +180,9 @@
 				B2A849EA1CBCD0700051FD02 /* Main */,
 				B2A849EB1CBCD08F0051FD02 /* RankList */,
 				B2A849EC1CBCD0AC0051FD02 /* Statistics */,
-				B275E2191CB29AD0006BB7E8 /* Resource */,
 				B2A849EF1CBCD1160051FD02 /* Setting */,
 				B2A849F01CBCECEF0051FD02 /* Tips */,
+				B275E2191CB29AD0006BB7E8 /* Resource */,
 				B275E0ED1CAF5553006BB7E8 /* AppDelegate.swift */,
 				B275E0F11CAF5553006BB7E8 /* Main.storyboard */,
 				B275E0F61CAF5553006BB7E8 /* LaunchScreen.storyboard */,
@@ -268,17 +268,57 @@
 		B275E2191CB29AD0006BB7E8 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				B275E2131CB276A6006BB7E8 /* Schedule.swift */,
 				B275E21A1CB29AED006BB7E8 /* UIColor+Extension.swift */,
 				B275E1211CAFE9DA006BB7E8 /* Bgm */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
 		};
-		B2A849EA1CBCD0700051FD02 /* Main */ = {
+		B28771521CCC5C2A0012FF49 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B275E1861CAFF48A006BB7E8 /* RankListTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B28771531CCC5C310012FF49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B275E1881CAFFA06006BB7E8 /* RankListTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B28771541CCC5C450012FF49 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				B275E0EF1CAF5553006BB7E8 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B28771551CCC5C590012FF49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B275E2131CB276A6006BB7E8 /* Schedule.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B28771561CCC5C600012FF49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B2A849EA1CBCD0700051FD02 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B28771561CCC5C600012FF49 /* View */,
+				B28771551CCC5C590012FF49 /* Model */,
+				B28771541CCC5C450012FF49 /* Controller */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -286,8 +326,8 @@
 		B2A849EB1CBCD08F0051FD02 /* RankList */ = {
 			isa = PBXGroup;
 			children = (
-				B275E1861CAFF48A006BB7E8 /* RankListTableViewController.swift */,
-				B275E1881CAFFA06006BB7E8 /* RankListTableViewCell.swift */,
+				B28771531CCC5C310012FF49 /* View */,
+				B28771521CCC5C2A0012FF49 /* Controller */,
 			);
 			name = RankList;
 			sourceTree = "<group>";
