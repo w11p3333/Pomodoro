@@ -11,6 +11,7 @@ import AVFoundation
 import RealmSwift
 import MediaPlayer
 
+
 //时间状态
 struct timeState {
     
@@ -21,6 +22,8 @@ struct timeState {
 
 class ViewController: UIViewController {
 
+
+    
     @IBOutlet var bgView: UIView!
     
     @IBOutlet weak var contentView: UIView!
@@ -110,19 +113,24 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+           
         //赋值当前时间
         currentTime = workTime
-        
         restTimeLabel.hidden = true
-        mainTimeLabel.text = formatTime(currentTime)
+        mainTimeLabel.text = NSTimer.formatTime(currentTime)
         setLabelText()
         //设置动画效果
         self.view.userInteractionEnabled = false
         self.contentView.transform = CGAffineTransformMakeTranslation(0, -1000)
-        
-        //设置背景手势
+        setGesture()
         bgView.backgroundColor = bgColor
+    }
+    
+    
+    func setGesture()
+    {
+        //设置背景手势
+ 
         bgView.userInteractionEnabled = true
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.BackgroundViewDidSwiped))
         leftSwipe.direction = UISwipeGestureRecognizerDirection.Left
@@ -133,18 +141,17 @@ class ViewController: UIViewController {
         //设置时间长按手势
         mainTimeLabel.userInteractionEnabled = true
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.mainTimeLabelDidLongPress))
-            longPress.minimumPressDuration = 1.0
+        longPress.minimumPressDuration = 1.0
         mainTimeLabel.addGestureRecognizer(longPress)
-        
-        
-   
+
+    
     }
     
     //设置label显示
     func setLabelText()
     {
         scheduleDateBase = realm.objects(Schedule)
-        todayLabel.text = "今天:\(realm.objects(Schedule).filter("createDay = '\(getNowTime().first!)'").count)"
+        todayLabel.text = "今天:\(realm.objects(Schedule).filter("createDay = '\(NSTimer.getNowTime().first!)'").count)"
         allDayLabel.text = "历史番茄数:\(scheduleDateBase.count)"
     }
     
@@ -153,13 +160,8 @@ class ViewController: UIViewController {
     //设置滑动背景颜色 
     func BackgroundViewDidSwiped()
     {
-    let r = UIColor.randomValue()
-    let g = UIColor.randomValue()
-    let b = UIColor.randomValue()
-    bgColor = UIColor(red: r, green: g, blue: b, alpha: 0.9)
-    let rgb = [r,g,b]
-     NSUserDefaults.standardUserDefaults().setObject(rgb, forKey: "color")
-    self.view.backgroundColor = bgColor
+        
+    self.view.backgroundColor = UIColor.randomBackGroundColor()
      self.view.layoutIfNeeded()
     }
     
@@ -202,7 +204,6 @@ class ViewController: UIViewController {
     // MARK: 点击方法
     @IBAction func startClick(sender: AnyObject) {
         
-        
         if startBtn.selected
         {
             //停止按钮
@@ -212,7 +213,7 @@ class ViewController: UIViewController {
         }
         else
         {
-            
+    
         startBtn.selected = true
             //监听时间
         self.timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.updateTime), userInfo: nil, repeats: true)
@@ -252,12 +253,13 @@ class ViewController: UIViewController {
     }
     
     // MARK: 时间方法
+ 
     
     //更新时间
     func updateTime()
     {
-         var time:String
- 
+        
+        var time:String
         switch timeCurrentState {
         case timeState.REST:
             //设置变色
@@ -277,7 +279,7 @@ class ViewController: UIViewController {
             
             //进入休息时间
             restTimeLabel.hidden = false
-            time = formatTime(currentTime)
+            time = NSTimer.formatTime(currentTime)
             mainTimeLabel.text = time
             currentTime -= 1
             
@@ -309,7 +311,7 @@ class ViewController: UIViewController {
             }
             //进入工作倒计时
             restTimeLabel.hidden = true
-            time = formatTime(currentTime)
+            time = NSTimer.formatTime(currentTime)
             mainTimeLabel.text = time
             currentTime -= 1
         default:
@@ -329,35 +331,12 @@ class ViewController: UIViewController {
         self.timer.invalidate()
         //重置时间
         currentTime = workTime
-        let time = formatTime(currentTime)
+        let time = NSTimer.formatTime(currentTime)
         mainTimeLabel.text = time
         //重置状态
         timeCurrentState = timeState.STOP
         //重置颜色
         mainTimeLabel.textColor = UIColor.whiteColor()
-    }
-
-    //格式化时间
-    func formatTime(time:Int) -> String
-    {
-        let min = time / 60
-        let second = time % 60
-        let time = String(format: "%02d:%02d", arguments: [min,second])
-        return time
-    }
-    
-    //获取当前时间
-    func getNowTime() -> [String]
-    {
-        let date = NSDate()
-        let timeFormatter = NSDateFormatter()
-        timeFormatter.dateFormat = "HH:mm"
-        let nowTime = timeFormatter.stringFromDate(date) as String
-        let dayFormatter = NSDateFormatter()
-        dayFormatter.dateFormat = "yyy-MM-dd"
-        let dayTime = dayFormatter.stringFromDate(date) as String
-        return [dayTime,nowTime]
-        
     }
 
     
@@ -416,8 +395,8 @@ class ViewController: UIViewController {
     {
         let dbItem = Schedule()
         dbItem.workDetail = workDetail
-        dbItem.createDay = self.getNowTime().first
-        dbItem.createTime = self.getNowTime().last
+        dbItem.createDay = NSTimer.getNowTime().first
+        dbItem.createTime = NSTimer.getNowTime().last
         dbItem.workTime = workTime / 60
         try! realm.write({
             
@@ -466,6 +445,10 @@ class ViewController: UIViewController {
         
     
     }
+    
+    
+    
+    
   //停止音乐
     func stopMusic()
     {
@@ -500,9 +483,6 @@ class ViewController: UIViewController {
         localNotification.alertAction = "输入任务内容"
         //立即发送
         UIApplication.sharedApplication().presentLocalNotificationNow(localNotification)
-
-        
-        
        
     }
    
@@ -511,15 +491,11 @@ class ViewController: UIViewController {
     //锁屏信息
     func setLockedScreenInfo()
     {
-
-        
         //获取锁屏界面中心
     let playingInfoCenter = MPNowPlayingInfoCenter.defaultCenter()
         //设置展示的信息
         let artwork = MPMediaItemArtwork(image: UIImage(named: "tomato-icon")!)
         let info = [MPMediaItemPropertyAlbumTitle:"Pomodoro",MPMediaItemPropertyArtwork:artwork,MPMediaItemPropertyPlaybackDuration:currentTime]
-
-    
     playingInfoCenter.nowPlayingInfo = info
         //让应用可以接受远程事件
     UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
@@ -578,7 +554,7 @@ extension ViewController:UIPickerViewDelegate, UIPickerViewDataSource
         workTime = time
         currentTime = time
         NSUserDefaults.standardUserDefaults().setValue(time, forKey: "workTime")
-        mainTimeLabel.text = formatTime(time)
+        mainTimeLabel.text = NSTimer.formatTime(time)
         pickview.hidden = true
         //重新显示时间
         mainTimeLabel.hidden = false

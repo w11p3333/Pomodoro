@@ -24,4 +24,20 @@ extension UIColor
     }
 
 
+   class func randomBackGroundColor() -> UIColor
+    {
+        let r = UIColor.randomValue()
+        let g = UIColor.randomValue()
+        let b = UIColor.randomValue()
+        bgColor = UIColor(red: r, green: g, blue: b, alpha: 0.9)
+        let rgb = [r,g,b]
+        NSUserDefaults.standardUserDefaults().setObject(rgb, forKey: "color")
+        
+        return bgColor
+//        self.view.backgroundColor = bgColor
+//        self.view.layoutIfNeeded()
+    }
+
+    
+    
 }
